@@ -3,7 +3,9 @@ alert(123333);
 
 
 const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
-if (!area_of_little_to_no_impact_ctx) return;
+if (!area_of_little_to_no_impact_ctx){
+    return;
+}
 
 const labels_area_of_little_to_no_impact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200']
 const data_area_of_little_to_no_impact = {
