@@ -1,83 +1,113 @@
+function randomNumbers({ count, min, max }) {
+    const numbers = [];
+    for (let i = 0; i < count; i++) {
+        numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
+    }
+    return numbers;
+}
+
+function randomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function transparentize(color, opacity) {
+    const alpha = Math.round(opacity * 255).toString(16).padStart(2, '0');
+    return color + alpha;
+}
+
+function countries({ count }) {
+    const monthNames = ['Germany', 'Austria', 'Italy', 'Denmark', 'Spain', 'Netherlands', 'Portugal', 'Belgium', 'France', 'Iceland', 'United Kingdom', 'All countries'];
+    const result = [];
+    for (let i = 0; i < count; i++) {
+        result.push(monthNames[i % 12]);
+    }
+    return result;
+}
+
 //Area of little to no impact left chart -------------------------//
 
-const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
-// if (!area_of_little_to_no_impact_ctx) return;
+const areaOfLittleToNoImpactCtx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
+// if (!areaOfLittleToNoImpactCtx) return;
 
-const labels_area_of_little_to_no_impact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200']
-const data_area_of_little_to_no_impact = {
-  labels: labels_area_of_little_to_no_impact,
-  datasets: [
-    {
-      label: '  Record count   ',
-      data: ['46', '57', '80', '62', '55', '44'],
-      borderColor: '#80C7BD',
-      backgroundColor: transparentize('#80C7BD', 0.8),
+const labelsAreaOfLittleToNoImpact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200'];
+const dataAreaOfLittleToNoImpact = {
+    labels: labelsAreaOfLittleToNoImpact,
+    datasets: [
+        {
+            label: '  Record count   ',
+            data: ['46', '57', '80', '62', '55', '44'],
+            borderColor: '#80C7BD',
+            backgroundColor: transparentize('#80C7BD', 0.8),
+            order: 2
+        },
+        {
+            label: '  MHI-5    ',
+            data: ['55', '58', '57', '57.1', '54', '55'],
+            borderColor: '#FF5200',
+            backgroundColor: transparentize('#FF5200', 1),
+            type: 'line',
+            order: 1
+        }
+    ]
+};
 
-      
-      order: 2
-    },
-    {
-      label: '  MHI-5    ',
-      data: ['55', '58', '57', '57.1', '54', '55'],
-      borderColor: '#FF5200',
-      backgroundColor: transparentize('#FF5200', 1),
-      type: 'line',
-      order: 1
+const configAreaOfLittleToNoImpact = {
+    type: 'bar',
+    data: dataAreaOfLittleToNoImpact,
+    options: {
+        barPercentage: 0.5,
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    usePointStyle: true,
+                    boxWidth: 6
+                }
+            },
+            title: {
+                display: true,
+                text: 'Rent and MHI-5 score'
+            }
+        },
+        scales: {
+            y: {
+                type: 'linear',
+                display: true,
+                position: 'left',
+                min: 40,
+                max: 80,
+                title: {
+                    display: true,
+                    text: 'MHI-5'
+                }
+            },
+            y1: {
+                type: 'linear',
+                display: true,
+                position: 'right',
+                min: 0,
+                max: 1200,
+                title: {
+                    display: true,
+                    text: 'Record count'
+                },
+                ticks: { stepSize: 300 },
+                grid: {
+                    drawOnChartArea: false // only want the grid lines for one axis to show up
+                }
+            }
+        }
     }
-  ]
 };
 
-const config_area_of_little_to_no_impact = {
-  type: 'bar',
-  data: data_area_of_little_to_no_impact,
-  options: {
-    barPercentage: 0.5,
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'bottom',
-        labels: {
-          usePointStyle: true,
-          boxWidth: 6
-        }
-      },
-      title: {
-        display: true,
-        text: 'Rent and MHI-5 score'
-      }
-    },
-    scales: {
-      y: {
-        type: 'linear',
-        display: true,
-        position: 'left',
-        min: 40,
-        max: 80,
-        title: {
-          display: true,
-          text: 'MHI-5'
-        },
-      },
-      y1: {
-        type: 'linear',
-        display: true,
-        position: 'right',  
-        min: 0,
-        max: 1200,
-        title: {
-          display: true,
-          text: 'Record count'
-        },
-        ticks: {stepSize: 300},
-        grid: {
-          drawOnChartArea: false, // only want the grid lines for one axis to show up
-        }
-      }
-    },
-  },
-};
+const chartAreaOfLittleToNoImpact = new Chart(areaOfLittleToNoImpactCtx, configAreaOfLittleToNoImpact);
 
-const chart_area_of_little_to_no_impact = new Chart(area_of_little_to_no_impact_ctx, config_area_of_little_to_no_impact);
 
 //Area of little to no impact left chart -------------------------//
 
