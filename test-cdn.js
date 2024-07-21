@@ -1,10 +1,3 @@
-import Chart from 'chart.js/auto';
-import { randomNumbers, transparentize, countries } from 'src/utils/utils.js';
-
-window.Webflow ||= [];
-window.Webflow.push(() => {
-
-
 //Area of little to no impact left chart -------------------------//
 
 const area_of_little_to_no_impact_ctx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
@@ -4549,4 +4542,3 @@ const chart5 = new Chart(ctx5, config5);
 
 // const chart6 = new Chart(ctx6, config6);
 //Chart 6 ------------------------------------------------------------------------------------------------------------------------------
-});
