@@ -32,7 +32,7 @@ function countries({ count }) {
 //Area of little to no impact left chart -------------------------//
 
 const areaOfLittleToNoImpactCtx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
-if (!areaOfLittleToNoImpactCtx) return;
+//if (!areaOfLittleToNoImpactCtx) return;
 
 const labelsAreaOfLittleToNoImpact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200'];
 const dataAreaOfLittleToNoImpact = {
@@ -4474,6 +4474,50 @@ const config5 = {
 };
 
 const chart5 = new Chart(ctx5, config5);
+
+
+
+
+
+//Domestic Interational Exchange CTX
+const by_domestic_international_exchange_ctx = document.querySelector('[data-element="by_domestic_international_exchange"]');
+  if (!by_domestic_international_exchange_ctx) return;
+  const by_domestic_international_exchange_data = {
+    labels: ['  1  ', '  2  ', '  3  ', '  4  ', '  Final  '],
+    datasets: [
+      {
+        label: '  By Domestic international exchange',
+        data: [37.4, 20.9, 18.9, 10.2, 12.6], 
+        backgroundColor: ['#80C7BD', '#FF5200', '#F5E847', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+const by_domestic_international_exchange_config = {
+  type: 'doughnut',
+  data: by_domestic_international_exchange_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'By Domestic international exchange'
+      },
+    }
+  },
+};
+const by_domestic_international_exchange_chart = new Chart(by_domestic_international_exchange_ctx, by_domestic_international_exchange_config);
+
+
+
+
+
 
 //Chart 5 ------------------------------------------------------------------------------------------------------------------------------
 
