@@ -4149,7 +4149,7 @@ const by_domestic_international_exchange_chart = new Chart(by_domestic_internati
 
 
 //Level of study
-const by_domestic_international_exchange_ctx = document.querySelector('[data-element="level_of_study"]');
+const level_of_study_ctx = document.querySelector('[data-element="level_of_study"]');
   //if (!level_of_study_ctx) return;
   const level_of_study_data = {
     labels: ['  Undergraduate  ', '  Postgraduate  '],
