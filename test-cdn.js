@@ -4147,3 +4147,40 @@ const by_domestic_international_exchange_config = {
 const by_domestic_international_exchange_chart = new Chart(by_domestic_international_exchange_ctx, by_domestic_international_exchange_config);
 
 
+
+//Level of study
+const by_domestic_international_exchange_ctx = document.querySelector('[data-element="level_of_study"]');
+  //if (!level_of_study_ctx) return;
+  const level_of_study_data = {
+    labels: ['  Undergraduate  ', '  Postgraduate  '],
+    datasets: [
+      {
+        label: '  Level Of Study',
+        data: [77.60, 22.40], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+const level_of_study_config = {
+  type: 'doughnut',
+  data: level_of_study_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Level Of Study'
+      },
+    }
+  },
+};
+const level_of_study_chart = new Chart(level_of_study_ctx, level_of_study_config);
+
+
