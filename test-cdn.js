@@ -4481,7 +4481,7 @@ const chart5 = new Chart(ctx5, config5);
 
 //Domestic Interational Exchange CTX
 const by_domestic_international_exchange_ctx = document.querySelector('[data-element="by_domestic_international_exchange"]');
-  if (!by_domestic_international_exchange_ctx) return;
+  //if (!by_domestic_international_exchange_ctx) return;
   const by_domestic_international_exchange_data = {
     labels: ['  1  ', '  2  ', '  3  ', '  4  ', '  Final  '],
     datasets: [
