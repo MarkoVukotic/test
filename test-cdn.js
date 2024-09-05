@@ -4119,7 +4119,7 @@ const by_domestic_international_exchange_ctx = document.querySelector('[data-ele
     datasets: [
       {
         label: '  By Domestic international exchange',
-        data: [54.07, 36.41, 9.52], 
+        data: [5908, 3979, 1040], 
         backgroundColor: ['#80C7BD', '#FF5200', '#F5E847'],
       }
     ]
@@ -4156,7 +4156,7 @@ const level_of_study_ctx = document.querySelector('[data-element="level_of_study
     datasets: [
       {
         label: '  Level Of Study',
-        data: [77.60, 22.40], 
+        data: [8479, 2448], 
         backgroundColor: ['#80C7BD', '#FF5200'],
       }
     ]
