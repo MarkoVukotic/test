@@ -4115,12 +4115,12 @@ const respondents_by_undergraduate_year_of_study_sweden_chart = new Chart(respon
 const by_domestic_international_exchange_ctx = document.querySelector('[data-element="by_domestic_international_exchange"]');
   //if (!by_domestic_international_exchange_ctx) return;
   const by_domestic_international_exchange_data = {
-    labels: ['  1  ', '  2  ', '  3  ', '  4  ', '  Final  '],
+    labels: ['  Domestic Students  ', '  International Students  ', '  Exchange Students  '],
     datasets: [
       {
         label: '  By Domestic international exchange',
-        data: [37.4, 20.9, 18.9, 10.2, 12.6], 
-        backgroundColor: ['#80C7BD', '#FF5200', '#F5E847', '#698FFF', '#12141D'],
+        data: [54.07, 36.41, 9.52], 
+        backgroundColor: ['#80C7BD', '#FF5200', '#F5E847'],
       }
     ]
   };
@@ -4147,104 +4147,3 @@ const by_domestic_international_exchange_config = {
 const by_domestic_international_exchange_chart = new Chart(by_domestic_international_exchange_ctx, by_domestic_international_exchange_config);
 
 
-
-
-
-
-//Chart 5 ------------------------------------------------------------------------------------------------------------------------------
-
-
-//Chart 6 ------------------------------------------------------------------------------------------------------------------------------
-
-// const ctx6 = document.querySelector('[data-element="chart-6"]');
-// if (!ctx6) return;
-
-// const DATA_COUNT = 7;
-// const NUMBER_CFG = {count: DATA_COUNT, rmin: 1, rmax: 1, min: -100, max: 100};
-
-// // Function to generate bubble data
-// function generateBubbles(cfg) {
-//   const data = [];
-//   for (let i = 0; i < cfg.count; i++) {
-//     data.push({
-//       x: Math.random() * (cfg.max - cfg.min) + cfg.min,
-//       y: Math.random() * (cfg.max - cfg.min) + cfg.min,
-//       r: Math.random() * (cfg.rmax - cfg.rmin) + cfg.rmin,
-//     });
-//   }
-//   return data;
-// }
-
-// // Define chart colors
-// const CHART_COLORS = {
-//   red: 'rgb(255, 99, 132)',
-//   orange: 'rgb(255, 159, 64)',
-// };
-
-// // Function to make a color transparent
-// function transparentize(color, opacity) {
-//   const alpha = 1 - opacity;
-//   return color.replace('rgb', 'rgba').replace(')', `, ${alpha})`);
-// }
-
-// const data6 = {
-//   datasets: [
-//     {
-//       label: 'Dataset 1',
-//       data: generateBubbles(NUMBER_CFG),
-//       borderColor: CHART_COLORS.red,
-//       backgroundColor: transparentize(CHART_COLORS.red, 0.5),
-//       yAxisID: 'y',
-//     },
-//     {
-//       label: 'Dataset 2',
-//       data: generateBubbles(NUMBER_CFG),
-//       borderColor: CHART_COLORS.orange,
-//       backgroundColor: transparentize(CHART_COLORS.orange, 0.5),
-//       yAxisID: 'y2',
-//     }
-//   ]
-// };
-
-// console.log(data);
-
-
-// const config6 = {
-//   type: 'scatter',
-//   data: data6,
-//   options: {
-//     responsive: true,
-//     plugins: {
-//       legend: {
-//         position: 'top',
-//       },
-//       title: {
-//         display: true,
-//         text: 'Chart.js Scatter Multi Axis Chart'
-//       }
-//     },
-//     scales: {
-//       y: {
-//         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-//         position: 'left',
-//         ticks: {
-//           color: '#FF5200'
-//         }
-//       },
-//       y2: {
-//         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-//         position: 'right',
-//         reverse: true,
-//         ticks: {
-//           color: '#058069'
-//         },
-//         grid: {
-//           drawOnChartArea: false // only want the grid lines for one axis to show up
-//         }
-//       }
-//     }
-//   },
-// };
-
-// const chart6 = new Chart(ctx6, config6);
-//Chart 6 ------------------------------------------------------------------------------------------------------------------------------
