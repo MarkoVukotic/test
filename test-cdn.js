@@ -4321,7 +4321,7 @@ const config_country_benchmarking_chart_2 = {
         display: true,
         position: 'left',
         min: 50,
-        max: 70,
+        max: 80,
         title: {
           display: true,
           text: 'MHI-5'
