@@ -4146,8 +4146,6 @@ const by_domestic_international_exchange_config = {
 };
 const by_domestic_international_exchange_chart = new Chart(by_domestic_international_exchange_ctx, by_domestic_international_exchange_config);
 
-
-
 //Level of study
 const level_of_study_ctx = document.querySelector('[data-element="level_of_study"]');
   //if (!level_of_study_ctx) return;
@@ -4182,5 +4180,75 @@ const level_of_study_config = {
   },
 };
 const level_of_study_chart = new Chart(level_of_study_ctx, level_of_study_config);
+
+//By Country
+const by_country_ctx = document.querySelector('[data-element="by_country"]');
+  //if (!by_country_ctx) return;
+  const by_country_data = {
+    labels: ['  Undergraduate  ', '  Postgraduate  '],
+    datasets: [
+      {
+        label: '  By Country',
+        data: [8479, 2448], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+const by_country_config = {
+  type: 'doughnut',
+  data: by_country_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'By Country'
+      },
+    }
+  },
+};
+const by_country_chart = new Chart(by_country_ctx, by_country_config);
+
+//By Accommodation Type
+const by_accommodation_type_ctx = document.querySelector('[data-element="by_accommodation_type"]');
+  //if (!by_accommodation_type_ctx) return;
+  const by_accommodation_type_data = {
+    labels: ['  Undergraduate  ', '  Postgraduate  '],
+    datasets: [
+      {
+        label: '  By Accommodation Type',
+        data: [8479, 2448], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+const by_accommodation_type_config = {
+  type: 'doughnut',
+  data: by_accommodation_type_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'By Accommodation Type'
+      },
+    }
+  },
+};
+const by_accommodation_type_chart = new Chart(by_accommodation_type_ctx, by_accommodation_type_config);
 
 
