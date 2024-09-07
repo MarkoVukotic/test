@@ -4262,91 +4262,54 @@ const by_accommodation_type_chart = new Chart(by_accommodation_type_ctx, by_acco
 
 
 
-const country_benchmarking_chart_2_ctx = document.querySelector('[data-element="country_benchmarking_chart_2"]');
+const facilities_1_ctx = document.querySelector('[data-element="facilities_1"]');
 // if (!country_benchmarking_chart_2_ctx) return;
 
-const labels_country_benchmarking_chart_2 = ['Portugal', 'Spain', 'Austria', 'Denmark', 'Sweden', 'Poland', 'France', 'Finland', 'Italy', 'Germany', 'Czechia', 'Netherlands', 'Ireland', 'Belgium', 'Iceland', 'United Kingdom'];
-const data_country_benchmarking_chart_2 = {
-  labels: labels_country_benchmarking_chart_2,
+const labels_facilities_1 = ['Community lounge / games area', 'Shared outdoor space', 'Organised community events & activities (online and offline, ResLife)', 'Gym', 'Room cleaning', 'Laundry facilties', 'Bookable shared spaces'];
+const data_facilities_1 = {
+  labels: labels,
   datasets: [
     {
-      label: '  MHI-5   ',
-      data: ['64.84', '61.04', '60.57', '60.24', '59.79', '59.79', '58.66', '57.82', '57.68', '57.26', '56.88', '56.59', '55.43', '55.21' , '54.32' ,'51.83'],
-      borderColor: '#80C7BD',
-      backgroundColor: transparentize('#80C7BD', 0.8),
-      order: 1
+      label: 'Non-users',
+      data: ['55.84', '55.53', '55.84', '56.92', '57.70', '55.98', '57.11'],
+      backgroundColor: ['#80C7BD', '#80C7BD','#80C7BD','#80C7BD','#80C7BD','#80C7BD','#80C7BD'],
+      stack: 'Stack 0',
+    },    
+    {
+      label: 'Average sometimes and often maths',
+         data: ['60.47', '59.89', '60.71', '60.22', '60.20', '58.06', '60.48'],
+      backgroundColor: ['#FF5200', '#FF5200','#FF5200','#FF5200','#FF5200','#FF5200','#FF5200'],
+      stack: 'Stack 1',
     },
-    {
-      label: '  Traditional Net Promoter Score    ',
-    data: ['41.40', '20.93', '3.60', '9.61', '25.65', '26.41', '-15.55', '24.75', '-1.07', '-19.94', '-32.14', '6.07', '-30.35', '-58.42' , '-2.04' ,'-5.00'],
-      borderColor: '#FF5200',
-      backgroundColor: transparentize('#FF5200', 1),
-      type: 'line',
-      order: 0
-    }
-    ,
-    {
-      label: '  MH Impact Net Promoter Score    ',
-     data: ['10.15', '1.62', '-10.59', '-28.12', '-16.10', '-0.47', '-26.34', '-12.65', '-23.38', '-19.81', '-27.85', '-26.72', '-38.14', '-48.31' , '-35.83' ,'-34.49'],
-      borderColor: '#f5e846',
-      backgroundColor: transparentize('#f5e846', 1),
-      type: 'line',
-      order: 0
-    }
   ]
 };
 
-const config_country_benchmarking_chart_2 = {
+const config_facilities_1 = {
   type: 'bar',
-  data: data_country_benchmarking_chart_2,
+  data: data,
   options: {
-    barPercentage: 0.5,
-    responsive: true,
     plugins: {
-      legend: {
-        position: 'bottom',
-        labels: {
-          usePointStyle: true,
-          boxWidth: 6
-        }
-      },
       title: {
         display: true,
-        text: ''
-      }
+        text: 'Services and Facilities usage with greatest differential in MHI5 reported'
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: false,
     },
     scales: {
-      y: {
-        type: 'linear',
-        display: true,
-        position: 'left',
-        min: 49,
-        max: 65,
-        title: {
-          display: true,
-          text: 'MHI-5'
-        },
+      x: {
+        stacked: true,
       },
-      y1: {
-        type: 'linear',
-        display: true,
-        position: 'right',  
-        min: -50.0,
-        max: 30.0,
-        title: {
-          display: true,
-          text: 'MH Impact Net Promoter Score'
-        },
-        ticks: {stepSize: 10},
-        grid: {
-          drawOnChartArea: false, // only want the grid lines for one axis to show up
-        }
+      y: {
+        stacked: true
       }
-    },
-  },
+    }
+  }
 };
 
-const chart_country_benchmarking_chart_2 = new Chart(country_benchmarking_chart_2_ctx, config_country_benchmarking_chart_2);
+const chart_facilities_1 = new Chart(facilities_1_ctx, config_facilities_1);
 
 
 
