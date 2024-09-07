@@ -4320,8 +4320,8 @@ const config_country_benchmarking_chart_2 = {
         type: 'linear',
         display: true,
         position: 'left',
-        min: 50,
-        max: 80,
+        min: 0,
+        max: 100,
         title: {
           display: true,
           text: 'MHI-5'
@@ -4331,7 +4331,7 @@ const config_country_benchmarking_chart_2 = {
         type: 'linear',
         display: true,
         position: 'right',  
-        min: -35.0,
+        min: -70.0,
         max: 70.0,
         title: {
           display: true,
