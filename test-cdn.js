@@ -4679,8 +4679,8 @@ const config_facilities_8 = {
       },
       y: {
         stacked: true,
-        min: 0,
-        max: 12000, // Corrected the range so the min is smaller than the max
+        min: 52,
+        max: 63, // Corrected the range so the min is smaller than the max
       }
     }
   }
