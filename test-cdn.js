@@ -4320,7 +4320,7 @@ const config_country_benchmarking_chart_2 = {
         type: 'linear',
         display: true,
         position: 'left',
-        min: -70,
+        min: 0,
         max: 100,
         title: {
           display: true,
