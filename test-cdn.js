@@ -4267,7 +4267,7 @@ const facilities_1_ctx = document.querySelector('[data-element="facilities_1"]')
 
 const labels_facilities_1 = ['Community lounge / games area', 'Shared outdoor space', 'Organised community events & activities (online and offline, ResLife)', 'Gym', 'Room cleaning', 'Laundry facilties', 'Bookable shared spaces'];
 const data_facilities_1 = {
-  labels: labels,
+  labels: labels_facilities_1,
   datasets: [
     {
       label: 'Non-users',
