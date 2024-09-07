@@ -4185,12 +4185,13 @@ const level_of_study_chart = new Chart(level_of_study_ctx, level_of_study_config
 const by_country_ctx = document.querySelector('[data-element="by_country"]');
   //if (!by_country_ctx) return;
   const by_country_data = {
-    labels: ['  Undergraduate  ', '  Postgraduate  '],
+    labels: ['  Portugal  ', '  Czechia  ', '  Belgium  ', '  Poland  ', '  Iceland  ', '  France  ', '  Italy  ', '  Denmark  ', '  Sweden  ', '  Ireland  ', '  Finland  ', '  Netherlands  ', '  Germany  ', '  Austria  ' , '  United Kingdom  ' , '  Spain  '],
     datasets: [
          {
       label: 'By Country',
-      data:  [8479, 2448],
-      borderColor: ['#80C7BD', '#FF5200'],
+      data:  [128, 140, 178, 212, 293, 315, 372, 416, 534, 616, 711, 741, 752, 972, 1718, 2703],
+      borderColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
+      backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
     }
     ]
   };
@@ -4199,8 +4200,6 @@ const by_country_config = {
   data: by_country_data,
   options: {
     indexAxis: 'y',
-    // Elements options apply to all of the options unless overridden in a dataset
-    // In this case, we are setting the border of each horizontal bar to be 2px wide
     elements: {
       bar: {
         borderWidth: 2,
@@ -4213,7 +4212,7 @@ const by_country_config = {
       },
       title: {
         display: true,
-        text: 'By Country'
+        text: 'Respondents by Country'
       }
     }
   },
@@ -4224,12 +4223,13 @@ const by_country_chart = new Chart(by_country_ctx, by_country_config);
 const by_accommodation_type_ctx = document.querySelector('[data-element="by_accommodation_type"]');
   //if (!by_accommodation_type_ctx) return;
   const by_accommodation_type_data = {
-    labels: ['  Undergraduate  ', '  Postgraduate  '],
+    labels: ['  Other  ', '  Public / social housing  ', '  With parents, guardians or relatives Rented house, flat or apartment  ', '  Rented house, flat or apartment  ', '  University owned student halls (on or off campus)  ', '  Student accommodation building owned by a private company  ', ],
     datasets: [
          {
-      label: 'By Accommodation Type',
-      data:  [8479, 2448],
-      borderColor: ['#80C7BD', '#FF5200'],
+    label: ['  Other  ', '  Public / social housing  ', '  With parents, guardians or relatives Rented house, flat or apartment  ', '  Rented house, flat or apartment  ', '  University owned student halls (on or off campus)  ', '  Student accommodation building owned by a private company  ', ],
+      data:  [114, 106, 137, 661, 2228, 7681],
+      borderColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
+      backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
     }
     ]
   };
@@ -4238,8 +4238,6 @@ const by_accommodation_type_config = {
   data: by_accommodation_type_data,
   options: {
     indexAxis: 'y',
-    // Elements options apply to all of the options unless overridden in a dataset
-    // In this case, we are setting the border of each horizontal bar to be 2px wide
     elements: {
       bar: {
         borderWidth: 2,
@@ -4252,7 +4250,7 @@ const by_accommodation_type_config = {
       },
       title: {
         display: true,
-        text: 'By Accommodation Type'
+        text: 'Respondents per Accommodation Type'
       }
     }
   },
