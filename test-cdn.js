@@ -4303,7 +4303,9 @@ const config_facilities_1 = {
         stacked: true,
       },
       y: {
-        stacked: true
+        stacked: true,
+            min: 50,
+            max: 60,
       }
     }
   }
