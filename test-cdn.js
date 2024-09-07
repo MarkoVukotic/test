@@ -4252,3 +4252,50 @@ const by_accommodation_type_config = {
 const by_accommodation_type_chart = new Chart(by_accommodation_type_ctx, by_accommodation_type_config);
 
 
+
+
+
+//By Accommodation Type
+const by_accommodation_type_ctx = document.querySelector('[data-element="by_accommodation_type"]');
+  //if (!by_accommodation_type_ctx) return;
+  const by_accommodation_type_data = {
+    labels: ['  Undergraduate  ', '  Postgraduate  '],
+    datasets: [
+         {
+      label: 'By Accommodation Type',
+      data:  [8479, 2448],
+      borderColor: ['#80C7BD', '#FF5200'],
+    }
+    ]
+  };
+const by_accommodation_type_config = {
+  type: 'bar',
+  data: data,
+  options: {
+    indexAxis: 'y',
+    // Elements options apply to all of the options unless overridden in a dataset
+    // In this case, we are setting the border of each horizontal bar to be 2px wide
+    elements: {
+      bar: {
+        borderWidth: 2,
+      }
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Horizontal Bar Chart'
+      }
+    }
+  },
+};
+const by_accommodation_type_chart = new Chart(by_accommodation_type_ctx, by_accommodation_type_config);
+
+
+
+
+
+
