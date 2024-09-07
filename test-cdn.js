@@ -4569,7 +4569,7 @@ const facilities_5_config = {
       },
       title: {
         display: true,
-        text: 'NPS: Often + Sometimes by Services'
+        text: ''
       }
     }
   },
@@ -4620,7 +4620,7 @@ const facilities_7_config = {
       },
       title: {
         display: true,
-        text: 'NPS: Often + Sometimes by Facilities'
+        text: ''
       }
     }
   },
@@ -4690,6 +4690,58 @@ const chart_facilities_8 = new Chart(facilities_8_ctx, config_facilities_8);
 
 
 
+
+
+
+
+const facilities_9_ctx = document.querySelector('[data-element="facilities_9"]');
+// if (!facilities_9_ctx) return;
+
+const labels_facilities_9 = [
+  'Students reporting loneliness',
+  'Students not loneley'
+];
+
+const data_facilities_9 = {
+  labels: labels_facilities_9,
+  datasets: [
+    {
+      label: 'Respondents taking part',
+      data: ['49.6', '63.2'],
+      backgroundColor: ['#80C7BD', '#80C7BD'],
+      stack: 'Stack 0',
+    },
+  ]
+};
+
+const config_facilities_9 = {
+  type: 'bar',
+  data: data_facilities_9,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Respondents taking part'
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: false,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+        min: 70,
+        max: 0, // Corrected the range so the min is smaller than the max
+      }
+    }
+  }
+};
+
+const chart_facilities_9 = new Chart(facilities_9_ctx, config_facilities_9);
 
 
 
