@@ -4438,8 +4438,8 @@ const config_facilities_3 = {
       },
       y: {
         stacked: true,
-            min: 6,
-            max: 7.2,
+            min: 1200,
+            max: 0,
       }
     }
   }
@@ -4511,14 +4511,131 @@ const config_facilities_4 = {
       },
       y: {
         stacked: true,
-            min: 6,
-            max: 7.2,
+            min: 12000,
+            max: 0,
       }
     }
   }
 };
 
 const chart_facilities_4 = new Chart(facilities_4_ctx, config_facilities_4);
+
+
+
+// Facilities Chart
+const facilities_5_ctx = document.querySelector('[data-element="facilities_5"]');
+// if (!facilities_5_ctx) return;
+const facilities_5_data = {
+  labels: [
+    'On-site reception',
+    'Parcel delivery service',
+    'Repairs and building manager',
+    'Mobile app',
+    'Cleaning of shared spaces',
+    'Wi-Fi support',
+    'On-site community manager',
+    'Security staff',
+    'Room cleaning',
+    'Organised community events & activities (online and offline, ResLife)',
+    'Community networking app',
+    'Mental health services (counselling, helpline etc)',
+    'Student lead community groups',
+    'Career / job support'
+  ],
+  datasets: [
+    {
+      label: 'Services',
+      data: [8, 10, 11.1, 12.2, 14.1, 16.8, 17.3, 17.7, 18, 22.8, 22.9, 28.4, 29.6, 35.2],
+      borderColor: '#80C7BD',
+      backgroundColor: '#80C7BD',
+    }
+  ]
+};
+
+const facilities_5_config = {
+  type: 'bar',
+  data: facilities_5_data,
+  options: {
+    indexAxis: 'y',
+    elements: {
+      bar: {
+        borderWidth: 2,
+      }
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: 'NPS: Often + Sometimes by Services'
+      }
+    }
+  },
+};
+
+const facilities_5_chart = new Chart(facilities_5_ctx, facilities_5_config);
+
+
+
+// Facilities Chart
+const facilities_6_ctx = document.querySelector('[data-element="facilities_6"]');
+// if (!facilities_6_ctx) return;
+const facilities_6_data = {
+  labels: [
+    'Community Kitchen',
+    'Laundry facilities',
+    'Gym',
+    'Study Areas',
+    'Shared outdoor space',
+    'Community lounge / games area',
+    'Rentable facilities (eg games console, disco ball, hoover / vacuum)',
+    'Shared bikes or cars',
+    'Bookable shared spaces',
+    'Cafe',
+    'Cinema',
+    'Restaurant',
+    'Swimming Pool'
+  ],
+  datasets: [
+    {
+      label: 'Facilities',
+      data: [5.7, 7.2, 15.8, 16.2, 17.6, 17.9, 20.7, 21, 27.7, 28.7, 29.8, 30.1, 32.2],
+      borderColor: '#80C7BD',
+      backgroundColor: '#80C7BD',
+    }
+  ]
+};
+
+const facilities_6_config = {
+  type: 'bar',
+  data: facilities_6_data,
+  options: {
+    indexAxis: 'y',
+    elements: {
+      bar: {
+        borderWidth: 2,
+      }
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: 'NPS: Often + Sometimes by Facilities'
+      }
+    }
+  },
+};
+
+const facilities_6_chart = new Chart(facilities_6_ctx, facilities_6_config);
+
+
+
+
 
 
 
