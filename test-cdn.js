@@ -4187,30 +4187,34 @@ const by_country_ctx = document.querySelector('[data-element="by_country"]');
   const by_country_data = {
     labels: ['  Undergraduate  ', '  Postgraduate  '],
     datasets: [
-      {
-        label: '  By Country',
-        data: [8479, 2448], 
-        backgroundColor: ['#80C7BD', '#FF5200'],
-      }
+         {
+      label: 'By Country',
+      data:  [8479, 2448],
+      borderColor: ['#80C7BD', '#FF5200'],
+    }
     ]
   };
 const by_country_config = {
-  type: 'doughnut',
+  type: 'bar',
   data: by_country_data,
   options: {
+    indexAxis: 'y',
+    // Elements options apply to all of the options unless overridden in a dataset
+    // In this case, we are setting the border of each horizontal bar to be 2px wide
+    elements: {
+      bar: {
+        borderWidth: 2,
+      }
+    },
     responsive: true,
     plugins: {
       legend: {
-        position: 'bottom',
-        labels: {
-          usePointStyle: true,
-          boxWidth: 6
-        }
+        position: 'right',
       },
       title: {
         display: true,
         text: 'By Country'
-      },
+      }
     }
   },
 };
@@ -4231,7 +4235,7 @@ const by_accommodation_type_ctx = document.querySelector('[data-element="by_acco
   };
 const by_accommodation_type_config = {
   type: 'bar',
-  data: data,
+  data: by_accommodation_type_data,
   options: {
     indexAxis: 'y',
     // Elements options apply to all of the options unless overridden in a dataset
@@ -4248,7 +4252,7 @@ const by_accommodation_type_config = {
       },
       title: {
         display: true,
-        text: 'Chart.js Horizontal Bar Chart'
+        text: 'By Accommodation Type'
       }
     }
   },
