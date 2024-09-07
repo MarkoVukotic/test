@@ -4286,7 +4286,7 @@ const data_facilities_1 = {
 
 const config_facilities_1 = {
   type: 'bar',
-  data: data,
+  data: data_facilities_1,
   options: {
     plugins: {
       title: {
