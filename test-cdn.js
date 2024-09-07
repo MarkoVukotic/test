@@ -4320,8 +4320,8 @@ const config_country_benchmarking_chart_2 = {
         type: 'linear',
         display: true,
         position: 'left',
-        min: 0,
-        max: 100,
+        min: 49,
+        max: 65,
         title: {
           display: true,
           text: 'MHI-5'
@@ -4331,8 +4331,8 @@ const config_country_benchmarking_chart_2 = {
         type: 'linear',
         display: true,
         position: 'right',  
-        min: -70.0,
-        max: 100.0,
+        min: -50.0,
+        max: 30.0,
         title: {
           display: true,
           text: 'MH Impact Net Promoter Score'
