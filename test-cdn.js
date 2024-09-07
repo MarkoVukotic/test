@@ -4226,7 +4226,7 @@ const by_accommodation_type_ctx = document.querySelector('[data-element="by_acco
     labels: ['  Other  ', '  Public / social housing  ', '  With parents, guardians or relatives Rented house, flat or apartment  ', '  Rented house, flat or apartment  ', '  University owned student halls (on or off campus)  ', '  Student accommodation building owned by a private company  ', ],
     datasets: [
          {
-    label: ['  Other  ', '  Public / social housing  ', '  With parents, guardians or relatives Rented house, flat or apartment  ', '  Rented house, flat or apartment  ', '  University owned student halls (on or off campus)  ', '  Student accommodation building owned by a private company  ', ],
+      label: 'By Accommodation Type',
       data:  [114, 106, 137, 661, 2228, 7681],
       borderColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
       backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
