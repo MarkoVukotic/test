@@ -4320,7 +4320,7 @@ const config_country_benchmarking_chart_2 = {
         type: 'linear',
         display: true,
         position: 'left',
-        min: 0,
+        min: -70,
         max: 100,
         title: {
           display: true,
@@ -4332,7 +4332,7 @@ const config_country_benchmarking_chart_2 = {
         display: true,
         position: 'right',  
         min: -70.0,
-        max: 70.0,
+        max: 100.0,
         title: {
           display: true,
           text: 'MH Impact Net Promoter Score'
