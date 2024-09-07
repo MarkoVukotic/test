@@ -34,7 +34,7 @@ function countries({ count }) {
 const areaOfLittleToNoImpactCtx = document.querySelector('[data-element="area_of_little_to_no_impact"]');
 //if (!areaOfLittleToNoImpactCtx) return;
 
-const labelsAreaOfLittleToNoImpact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200'];
+        const labelsAreaOfLittleToNoImpact = ['0€', '<€400', '€400-600', '€601-800', '€801-1000', '€1001-1200'];
 const dataAreaOfLittleToNoImpact = {
     labels: labelsAreaOfLittleToNoImpact,
     datasets: [
@@ -4438,7 +4438,7 @@ const config_facilities_3 = {
       },
       y: {
         stacked: true,
-            min: 1200,
+            min: 12000,
             max: 0,
       }
     }
