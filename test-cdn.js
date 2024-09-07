@@ -4580,37 +4580,32 @@ const facilities_5_chart = new Chart(facilities_5_ctx, facilities_5_config);
 
 
 // Facilities Chart
-const facilities_6_ctx = document.querySelector('[data-element="facilities_6"]');
-// if (!facilities_6_ctx) return;
-const facilities_6_data = {
+const facilities_7_ctx = document.querySelector('[data-element="facilities_7"]');
+// if (!facilities_7_ctx) return;
+const facilities_7_data = {
   labels: [
-    'Community Kitchen',
-    'Laundry facilities',
-    'Gym',
-    'Study Areas',
-    'Shared outdoor space',
-    'Community lounge / games area',
-    'Rentable facilities (eg games console, disco ball, hoover / vacuum)',
-    'Shared bikes or cars',
-    'Bookable shared spaces',
-    'Cafe',
+    'Swimming Pool',
+    'Career/job support',
+    'Student lead community groups',
     'Cinema',
+    'Mental health services',
     'Restaurant',
-    'Swimming Pool'
+    'Cafe',
+    'Shared bikes or cars'
   ],
   datasets: [
     {
-      label: 'Facilities',
-      data: [5.7, 7.2, 15.8, 16.2, 17.6, 17.9, 20.7, 21, 27.7, 28.7, 29.8, 30.1, 32.2],
+      label: 'Services and Facilities with a Possitive Impact on Well-Being',
+      data: [10.45, 8.73, 5.84, 5.72, 5.72, 3.48, 3.15, 0.2],
       borderColor: '#80C7BD',
       backgroundColor: '#80C7BD',
     }
   ]
 };
 
-const facilities_6_config = {
+const facilities_7_config = {
   type: 'bar',
-  data: facilities_6_data,
+  data: facilities_7_data,
   options: {
     indexAxis: 'y',
     elements: {
@@ -4631,7 +4626,68 @@ const facilities_6_config = {
   },
 };
 
-const facilities_6_chart = new Chart(facilities_6_ctx, facilities_6_config);
+const facilities_7_chart = new Chart(facilities_7_ctx, facilities_7_config);
+
+
+
+
+
+
+
+
+
+
+
+const facilities_8_ctx = document.querySelector('[data-element="facilities_8"]');
+// if (!facilities_8_ctx) return;
+
+const labels_facilities_8 = [
+  'Often',
+  'Sometimes',
+  'Never'
+];
+
+const data_facilities_8 = {
+  labels: labels_facilities_8,
+  datasets: [
+    {
+      label: 'Respondents taking part',
+      data: ['62', '37.7', '31.3'],
+      backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD'],
+      stack: 'Stack 0',
+    },
+  ]
+};
+
+const config_facilities_8 = {
+  type: 'bar',
+  data: data_facilities_8,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Respondents taking part'
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: false,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+        min: 0,
+        max: 12000, // Corrected the range so the min is smaller than the max
+      }
+    }
+  }
+};
+
+const chart_facilities_8 = new Chart(facilities_8_ctx, config_facilities_8);
+
 
 
 
