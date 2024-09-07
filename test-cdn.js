@@ -4312,7 +4312,7 @@ const config_country_benchmarking_chart_2 = {
       },
       title: {
         display: true,
-        text: 'country_benchmarking_chart_2 TITLE'
+        text: ''
       }
     },
     scales: {
