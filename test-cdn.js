@@ -4315,6 +4315,213 @@ const chart_facilities_1 = new Chart(facilities_1_ctx, config_facilities_1);
 
 
 
+const facilities_2_ctx = document.querySelector('[data-element="facilities_2"]');
+// if (!country_benchmarking_chart_2_ctx) return;
+
+const labels_facilities_2 = [
+  'Travel (bike / public transport card)',
+  'A programme of events and activities',
+  'Meals / catering (at least 2 meals per day)',
+  'High speed Wi-Fi',
+  'Contents insurance',
+  'Access to social facilities (i.e. games room, study space, common room)',
+  'Fully inclusive gas, electricity and water',
+  'Free laundry facilities',
+  'Parking for car and / or bike',
+  'Charged laundry facilities'
+];
+
+const data_facilities_2 = {
+  labels: labels_facilities_2,
+  datasets: [
+    {
+      label: 'Included',
+      data: ['7.21', '7.12', '7.29', '6.84', '7.04', '6.87', '6.8', '6.79', '7.03', '6.79'],
+      backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
+      stack: 'Stack 0',
+    },
+    {
+      label: 'Not included',
+      data: ['6.76', '6.47', '6.74', '6.56', '6.73', '6.52', '6.67', '6.78', '6.67', '6.78'],
+      backgroundColor: ['#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200'],
+      stack: 'Stack 1',
+    }
+  ]
+};
+
+const config_facilities_2 = {
+  type: 'bar',
+  data: data_facilities_2,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: ''
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: false,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+            min: 6,
+            max: 7.2,
+      }
+    }
+  }
+};
+
+const chart_facilities_2 = new Chart(facilities_2_ctx, config_facilities_2);
+
+
+
+
+const facilities_3_ctx = document.querySelector('[data-element="facilities_3"]');
+// if (!country_benchmarking_chart_3_ctx) return;
+
+const labels_facilities_3 = [
+  'Study Areas',
+  'Gym',
+  'Community Lounge / Games Area',
+  'Shared Outdoor Space',
+  'Community Kitchen',
+  'Cafe',
+  'Restaurant',
+  'Shared Bikes or Cars',
+  'Laundry Facilities',
+  'Cinema',
+  'Swimming Pool',
+  'Bookable Shared Spaces'
+];
+
+const data_facilities_3 = {
+  labels: labels_facilities_3,
+  datasets: [
+    {
+      label: 'Access',
+      data: ['8720', '7351', '9184', '9265', '7474', '4066', '3679', '4346', '10245', '4782', '2840', '5998'],
+      backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
+      stack: 'Stack 0',
+    },
+    {
+      label: 'No Access',
+      data: ['2207', '3576', '1743', '1662', '3453', '6861', '7248', '6581', '682', '6145', '8087', '4929'],
+      backgroundColor: ['#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200'],
+      stack: 'Stack 1',
+    }
+  ]
+};
+
+
+const config_facilities_3 = {
+  type: 'bar',
+  data: data_facilities_3,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: ''
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: false,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+            min: 6,
+            max: 7.2,
+      }
+    }
+  }
+};
+
+const chart_facilities_3 = new Chart(facilities_3_ctx, config_facilities_3);
+
+
+
+
+
+const facilities_4_ctx = document.querySelector('[data-element="facilities_4"]');
+// if (!country_benchmarking_chart_4_ctx) return;
+
+const labels_facilities_4 = [
+  'Organised Community Events',
+  'On-Site Reception',
+  'On-Site Community Manager',
+  'Students lead Community Groups',
+  'Mental Health Services',
+  'Security Staff',
+  'Wi-Fi Support',
+  'Repairs and Building Manager',
+  'Cleaning of Shared Spaces',
+  'Room Cleaning',
+  'Community Networking App',
+  'Rentable Facilities',
+  'Parcel Delivery Service',
+  'Mobile App',
+  'Career / Job Support'
+];
+
+const data_facilities_4 = {
+  labels: labels_facilities_4,
+  datasets: [
+    {
+      label: 'Access',
+      data: ['8444', '8396', '7615', '5990', '5221', '7479', '8524', '9658', '8287', '6541', '5961', '6841', '7966', '6285', '4463'],
+      backgroundColor: ['#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD', '#80C7BD'],
+      stack: 'Stack 0',
+    },
+    {
+      label: 'No Access',
+      data: ['2483', '2531', '3312', '4937', '5706', '3448', '2403', '1269', '2640', '4386', '4966', '4086', '2961', '4642', '6464'],
+      backgroundColor: ['#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200', '#FF5200'],
+      stack: 'Stack 1',
+    }
+  ]
+};
+
+
+const config_facilities_4 = {
+  type: 'bar',
+  data: data_facilities_4,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: ''
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: false,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+            min: 6,
+            max: 7.2,
+      }
+    }
+  }
+};
+
+const chart_facilities_4 = new Chart(facilities_4_ctx, config_facilities_4);
+
+
+
 
 
 
