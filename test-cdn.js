@@ -4111,6 +4111,331 @@ const respondents_by_undergraduate_year_of_study_sweden_chart = new Chart(respon
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+const respondents_by_gener_czechia_ctx = document.querySelector('[data-element="respondents_by_gener_czechia"]');
+//   if (!respondents_by_gener_czechia_ctx) return;
+  
+const respondents_by_gender_czechia_data = {
+    labels: ['  Female  ', '  Male  ', '  Non-binary  ', '  Other  ', '  Prefer not to say  '],
+    datasets: [
+      {
+        label: '  Respondents by gender',
+        data: [57.1, 39.3, 2.5, 0, 2.7],
+        backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_gener_czechia_config = {
+  type: 'doughnut',
+  data: respondents_by_gender_czechia_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by gender'
+      },
+      
+    }
+  },
+};
+const respondents_by_gener_czechia_chart = new Chart(respondents_by_gener_czechia_ctx, respondents_by_gener_czechia_config);
+// Countries --- Respondents by Gender Czechia Charts ------------------------------------//
+
+// Countries --- Respondents by Disability Czechia Charts ------------------------------------//
+const respondents_by_disability_czechia_ctx = document.querySelector('[data-element="respondents_by_disability_czechia"]');
+//   if (!respondents_by_disability_czechia_ctx) return;
+  
+const respondents_by_disability_czechia_data = {
+    labels: ['  Yes  ', '  Prefer not to say  ', '  No  '],
+    datasets: [
+      {
+        label: '  Respondents by disability',
+        data: [7.1, 6.4, 86.4],
+        backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_disability_czechia_config = {
+  type: 'doughnut',
+  data: respondents_by_disability_czechia_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by disability'
+      },
+      
+    }
+  },
+};
+const respondents_by_disability_czechia_chart = new Chart(respondents_by_disability_czechia_ctx, respondents_by_disability_czechia_config);
+// Countries --- Respondents by Disability Czechia Charts ------------------------------------//
+
+// Countries --- Respondents by international status Czechia Charts ------------------------------------//
+const respondents_by_international_status_czechia_ctx = document.querySelector('[data-element="respondents_by_international_status_czechia"]');
+//   if (!respondents_by_international_status_czechia_ctx) return;
+  
+const respondents_by_international_status_czechia_data = {
+    labels: ['  Yes  ', '  No  '],
+    datasets: [
+      {
+        label: '  Respondents by international_status',
+        data: [91.4, 8.6],
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+
+const respondents_by_international_status_czechia_config = {
+  type: 'doughnut',
+  data: respondents_by_international_status_czechia_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by international status'
+      },
+      
+    }
+  },
+};
+const respondents_by_international_status_czechia_chart = new Chart(respondents_by_international_status_czechia_ctx, respondents_by_international_status_czechia_config);
+// Countries --- Respondents by international status Czechia Charts ------------------------------------//
+
+// Countries --- Respondents by Student Type Czechia Charts ------------------------------------//
+const respondents_by_student_type_czechia_ctx = document.querySelector('[data-element="respondents_by_student_type_czechia"]');
+//   if (!respondents_by_student_type_czechia_ctx) return;
+  
+const respondents_by_student_type_czechia_data = {
+    labels: ['  Postgraduate  ', '  Undergraduate  '],
+    datasets: [
+      {
+        label: '  Respondents by student_type',
+        data: [15.7, 84.3], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+
+const respondents_by_student_type_czechia_config = {
+  type: 'doughnut',
+  data: respondents_by_student_type_czechia_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by student type'
+      },
+      
+    }
+  },
+};
+const respondents_by_student_type_czechia_chart = new Chart(respondents_by_student_type_czechia_ctx, respondents_by_student_type_czechia_config);
+// Countries --- Respondents by Student Type Czechia Charts ------------------------------------//
+
+// Countries --- Respondents by Accomodation type Czechia Charts ------------------------------------//
+const respondents_by_accommodation_type_czechia_ctx = document.querySelector('[data-element="respondents_by_accommodation_type_czechia"]');
+//   if (!respondents_by_accommodation_type_czechia_ctx) return;
+  
+const respondents_by_accommodation_type_czechia_data = {
+    labels: ['  PBSA  ', '  Other  '],
+    datasets: [
+      {
+        label: '  Respondents by accommodation_type',
+        data: [100, 0], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+
+const respondents_by_accommodation_type_czechia_config = {
+  type: 'doughnut',
+  data: respondents_by_accommodation_type_czechia_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by accommodation type'
+      },
+      
+    }
+  },
+};
+const respondents_by_accommodation_type_czechia_chart = new Chart(respondents_by_accommodation_type_czechia_ctx, respondents_by_accommodation_type_czechia_config);
+// Countries --- Respondents by Accomodation type Czechia Charts ------------------------------------//
+
+// Countries --- Respondents by Undergraduate Year of Study Czechia Charts ------------------------------------//
+const respondents_by_undergraduate_year_of_study_czechia_ctx = document.querySelector('[data-element="respondents_by_undergraduate_year_of_study_czechia"]');
+//   if (!respondents_by_undergraduate_year_of_study_czechia_ctx) return;
+  
+const respondents_by_undergraduate_year_of_study_czechia_data = {
+    labels: ['  1  ', '  2  ', '  3  ', '  4  ', '  Final  '],
+    datasets: [
+      {
+        label: '  Respondents by undergraduate year of study',
+        data: [33.9, 28.8, 26.3, 6.8, 4.2], 
+        backgroundColor: ['#80C7BD', '#FF5200', '#F5E847', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_undergraduate_year_of_study_czechia_config = {
+  type: 'doughnut',
+  data: respondents_by_undergraduate_year_of_study_czechia_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by undergraduate year of study'
+      },
+      
+    }
+  },
+};
+const respondents_by_undergraduate_year_of_study_czechia_chart = new Chart(respondents_by_undergraduate_year_of_study_czechia_ctx, respondents_by_undergraduate_year_of_study_czechia_config);
+// Countries --- Respondents by Undergraduate Year of Study Czechia Charts ------------------------------------//
+
+// Countries --- Czechia Charts ------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Domestic Interational Exchange CTX
 const by_domestic_international_exchange_ctx = document.querySelector('[data-element="by_domestic_international_exchange"]');
   //if (!by_domestic_international_exchange_ctx) return;
