@@ -4387,6 +4387,240 @@ const respondents_by_undergraduate_year_of_study_czechia_chart = new Chart(respo
 
 
 
+const respondents_by_gener_poland_ctx = document.querySelector('[data-element="respondents_by_gener_poland"]');
+//   if (!respondents_by_gener_poland_ctx) return;
+  
+const respondents_by_gender_poland_data = {
+    labels: ['  Female  ', '  Male  ', '  Non-binary  ', '  Other  ', '  Prefer not to say  '],
+    datasets: [
+      {
+        label: '  Respondents by gender',
+        data: [57.5, 41, 0.1, 0, 1.6],
+        backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_gener_poland_config = {
+  type: 'doughnut',
+  data: respondents_by_gender_poland_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by gender'
+      },
+      
+    }
+  },
+};
+const respondents_by_gener_poland_chart = new Chart(respondents_by_gener_poland_ctx, respondents_by_gener_poland_config);
+// Countries --- Respondents by Gender Poland Charts ------------------------------------//
+
+// Countries --- Respondents by Disability Poland Charts ------------------------------------//
+const respondents_by_disability_poland_ctx = document.querySelector('[data-element="respondents_by_disability_poland"]');
+//   if (!respondents_by_disability_poland_ctx) return;
+  
+const respondents_by_disability_poland_data = {
+    labels: ['  Yes  ', '  Prefer not to say  ', '  No  '],
+    datasets: [
+      {
+        label: '  Respondents by disability',
+        data: [13.2, 3.3, 83.5],
+        backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_disability_poland_config = {
+  type: 'doughnut',
+  data: respondents_by_disability_poland_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by disability'
+      },
+      
+    }
+  },
+};
+const respondents_by_disability_poland_chart = new Chart(respondents_by_disability_poland_ctx, respondents_by_disability_poland_config);
+// Countries --- Respondents by Disability Poland Charts ------------------------------------//
+
+// Countries --- Respondents by international status Poland Charts ------------------------------------//
+const respondents_by_international_status_poland_ctx = document.querySelector('[data-element="respondents_by_international_status_poland"]');
+//   if (!respondents_by_international_status_poland_ctx) return;
+  
+const respondents_by_international_status_poland_data = {
+    labels: ['  Yes  ', '  No  '],
+    datasets: [
+      {
+        label: '  Respondents by international_status',
+        data: [69.8, 30.2],
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+
+const respondents_by_international_status_poland_config = {
+  type: 'doughnut',
+  data: respondents_by_international_status_poland_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by international status'
+      },
+      
+    }
+  },
+};
+const respondents_by_international_status_poland_chart = new Chart(respondents_by_international_status_poland_ctx, respondents_by_international_status_poland_config);
+// Countries --- Respondents by international status Poland Charts ------------------------------------//
+
+// Countries --- Respondents by Student Type Poland Charts ------------------------------------//
+const respondents_by_student_type_poland_ctx = document.querySelector('[data-element="respondents_by_student_type_poland"]');
+//   if (!respondents_by_student_type_poland_ctx) return;
+  
+const respondents_by_student_type_poland_data = {
+    labels: ['  Postgraduate  ', '  Undergraduate  '],
+    datasets: [
+      {
+        label: '  Respondents by student_type',
+        data: [22.2, 77.8], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+
+const respondents_by_student_type_poland_config = {
+  type: 'doughnut',
+  data: respondents_by_student_type_poland_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by student type'
+      },
+      
+    }
+  },
+};
+const respondents_by_student_type_poland_chart = new Chart(respondents_by_student_type_poland_ctx, respondents_by_student_type_poland_config);
+// Countries --- Respondents by Student Type Poland Charts ------------------------------------//
+
+// Countries --- Respondents by Accomodation type Poland Charts ------------------------------------//
+const respondents_by_accommodation_type_poland_ctx = document.querySelector('[data-element="respondents_by_accommodation_type_poland"]');
+//   if (!respondents_by_accommodation_type_poland_ctx) return;
+  
+const respondents_by_accommodation_type_poland_data = {
+    labels: ['  PBSA  ', '  Other  '],
+    datasets: [
+      {
+        label: '  Respondents by accommodation_type',
+        data: [93.6, 6.4], 
+        backgroundColor: ['#80C7BD', '#FF5200'],
+      }
+    ]
+  };
+
+const respondents_by_accommodation_type_poland_config = {
+  type: 'doughnut',
+  data: respondents_by_accommodation_type_poland_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by accommodation type'
+      },
+      
+    }
+  },
+};
+const respondents_by_accommodation_type_poland_chart = new Chart(respondents_by_accommodation_type_poland_ctx, respondents_by_accommodation_type_poland_config);
+// Countries --- Respondents by Accomodation type Poland Charts ------------------------------------//
+
+// Countries --- Respondents by Undergraduate Year of Study Poland Charts ------------------------------------//
+const respondents_by_undergraduate_year_of_study_poland_ctx = document.querySelector('[data-element="respondents_by_undergraduate_year_of_study_poland"]');
+//   if (!respondents_by_undergraduate_year_of_study_poland_ctx) return;
+  
+const respondents_by_undergraduate_year_of_study_poland_data = {
+    labels: ['  1  ', '  2  ', '  3  ', '  4  ', '  Final  '],
+    datasets: [
+      {
+        label: '  Respondents by undergraduate year of study',
+        data: [27.9, 15.2, 22.4, 21.8, 12.7], 
+        backgroundColor: ['#80C7BD', '#FF5200', '#F5E847', '#698FFF', '#12141D'],
+      }
+    ]
+  };
+
+const respondents_by_undergraduate_year_of_study_poland_config = {
+  type: 'doughnut',
+  data: respondents_by_undergraduate_year_of_study_poland_data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6
+        }
+      },
+      title: {
+        display: true,
+        text: 'Respondents by undergraduate year of study'
+      },
+      
+    }
+  },
+};
+const respondents_by_undergraduate_year_of_study_poland_chart = new Chart(respondents_by_undergraduate_year_of_study_poland_ctx, respondents_by_undergraduate_year_of_study_poland_config);
+// Countries --- Respondents by Undergraduate Year of Study Poland Charts ------------------------------------//
+
+// Countries --- Poland Charts ------------------------------------//
 
 
 
