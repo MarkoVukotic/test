@@ -2504,7 +2504,7 @@ const respondents_by_gener_portugal_ctx = document.querySelector('[data-element=
     datasets: [
       {
         label: '  Respondents by gender',
-        data: [52.8, 46.5, 0.35, 0, 0.35],
+        data: [56.3, 42.2, 0.35, 0, 0.35],
         backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
       }
     ]
@@ -2543,7 +2543,7 @@ const respondents_by_disability_portugal_ctx = document.querySelector('[data-ele
     datasets: [
       {
         label: '  Respondents by disability',
-        data: [5, 0.7, 94.3],
+        data: [8.6, 3.3, 89.1],
         backgroundColor: ['#80C7BD', '#FF5200', '#FFD836', '#698FFF', '#12141D'],
       }
     ]
@@ -2582,7 +2582,7 @@ const respondents_by_international_status_portugal_ctx = document.querySelector(
     datasets: [
       {
         label: '  Respondents by international_status',
-        data: [91.1, 8.9],
+        data: [68, 32],
         backgroundColor: ['#80C7BD', '#FF5200'],
       }
     ]
@@ -2622,7 +2622,7 @@ const respondents_by_student_type_portugal_ctx = document.querySelector('[data-e
     datasets: [
       {
         label: '  Respondents by student_type',
-        data: [50.4, 49.6], 
+        data: [35.9, 64.1], 
         backgroundColor: ['#80C7BD', '#FF5200'],
       }
     ]
@@ -2662,7 +2662,7 @@ const respondents_by_accommodation_type_portugal_ctx = document.querySelector('[
     datasets: [
       {
         label: '  Respondents by accommodation_type',
-        data: [84.5, 15.5], 
+        data: [84.8, 15.2], 
         backgroundColor: ['#80C7BD', '#FF5200'],
       }
     ]
@@ -2701,7 +2701,7 @@ const respondents_by_undergraduate_year_of_study_portugal_ctx = document.querySe
     datasets: [
       {
         label: '  Respondents by undergraduate year of study',
-        data: [35, 23.8, 19.3, 13.6, 9.3], 
+        data: [31.7, 22, 20.7, 9.8, 15.9], 
         backgroundColor: ['#80C7BD', '#FF5200', '#F5E847', '#698FFF', '#12141D'],
       }
     ]
